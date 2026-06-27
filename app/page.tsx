@@ -1,36 +1,11 @@
-import { SignInButton } from "@clerk/nextjs"
-
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white flex-col items-center justify-center px-6 py-20">
-      <div className="text-center max-w-3xl">
-        <span className="inline-block mb-6 px-4 py-1 rounded-full text-xs font-semibold bg-blue-700 text-white">
-          BETA
-        </span>
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-          PLAIN DIGITAL
-          <br />
-          for modern creators
-        </h1>
-        <p className="text-gray-400 text-lg mb-8">
-          We build clean, fast, and powerful websites that make your brand stand out.
-        </p>
-        
-        <SignInButton mode="modal">
-          <button className="bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition">
-            Get Started
-          </button>
-        </SignInButton>
-
-      </div>
-
-      <div className="mt-16 w-full max-w-4xl">
-        <img
-          src="https://images.unsplash.com/photo-1557838923-2985c318be48?w=1200"
-          alt="workspace"
-          className="rounded-2xl w-full"
-        />
-      </div>
+    <main style={{background:'black',color:'white',minHeight:'100vh',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',textAlign:'center',padding:'40px'}}>
+      <span style={{background:'#2563eb',padding:'4px 12px',borderRadius:'999px',fontSize:'12px',marginBottom:'20px'}}>BETA</span>
+      <h1 style={{fontSize:'48px',fontWeight:'800',margin:0}}>PLAIN DIGITAL<br/>for modern creators</h1>
+      <p style={{color:'#aaa',margin:'16px 0 32px',maxWidth:'500px'}}>We build clean, fast, and powerful websites that make your brand stand out.</p>
+      <a href="mailto:hello@plaindigital.com" style={{background:'#2563eb',color:'white',padding:'12px 24px',borderRadius:'8px',textDecoration:'none',fontWeight:'600'}}>Get Started</a>
+      <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=800" style={{marginTop:'32px',borderRadius:'12px',maxWidth:'600px',width:'100%'}} alt="Digital Marketing"/>
     </main>
-  );
+  )
 }
