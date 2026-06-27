@@ -1,3 +1,5 @@
+import { SignInButton } from "@clerk/nextjs"
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white flex-col items-center justify-center px-6 py-20">
@@ -13,9 +15,13 @@ export default function Home() {
         <p className="text-gray-400 text-lg mb-8">
           We build clean, fast, and powerful websites that make your brand stand out.
         </p>
-        <button className="bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition">
-          Get Started
-        </button>
+        
+        <SignInButton mode="modal">
+          <button className="bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition">
+            Get Started
+          </button>
+        </SignInButton>
+
       </div>
 
       <div className="mt-16 w-full max-w-4xl">
